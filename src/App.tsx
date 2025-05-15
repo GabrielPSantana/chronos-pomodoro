@@ -1,12 +1,13 @@
+import { Container } from './component/Container';
+import { Logo } from './component/Logo';
 import './styles/theme.css';
 import './styles/global.css';
-import { Container } from './component/Container';
 
 export function App() {
   return (
     <>
       <Container>
-        <section>LOGO</section>
+        <Logo/>
       </Container>
 
       <Container>
