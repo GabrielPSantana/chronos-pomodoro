@@ -8,6 +8,7 @@ import { DefaultInput } from './component/DefaultInput';
 import { Cycles } from './component/Cycles';
 import { DefaultButton } from './component/DefaultButton';
 import { PlayCircleIcon } from 'lucide-react';
+import { Footer } from './component/Footer';
 
 export function App() {
   return (
@@ -27,7 +28,12 @@ export function App() {
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <DefaultInput labelText='task' placeholder='Digite algo' id='meuInput' type='text' />
+            <DefaultInput
+              labelText='task'
+              placeholder='Digite algo'
+              id='meuInput'
+              type='text'
+            />
           </div>
 
           <div className='formRow'>
@@ -39,15 +45,13 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <DefaultButton icon={<PlayCircleIcon/>} color='green'/>
+            <DefaultButton icon={<PlayCircleIcon />} />
           </div>
-
-
         </form>
       </Container>
 
       <Container>
-        <section>FOOTER</section>
+        <Footer/>
       </Container>
     </>
   );
